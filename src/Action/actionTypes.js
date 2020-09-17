@@ -1,0 +1,5 @@
+export const SET_TIME = 'SET_TIME'
+export const SET_NAME_PLAYER = 'SET_NAME_PLAYER'
+export const SET_INIT_BOARD = 'SET_INIT_BOARD'
+export const SET_UPDATE_BOARD = 'SET_UPDATE_BOARD'
+export const SET_START = 'SET_START'

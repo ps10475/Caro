@@ -1,0 +1,17 @@
+.Board {
+  width: 100vw;
+  height: 100vh;
+  vertical-align: middle;
+}
+.Cell {
+  background: none;
+  border: 0.2px solid #c8d6e5;
+  font-weight: bold;
+  height: 50px;
+  width: 50px;
+  float: left;
+  &:focus{
+    outline: none;
+    box-shadow: none;
+  }
+}

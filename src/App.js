@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import { Row, Col } from "reactstrap";
+import "./App.css";
+import Board from "./Components/Board/Board";
+import Sidebar from "./Components/Sidebar/Sidebar";
+ 
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Row>
+        <Col lg="3">
+          <Sidebar />
+        </Col>
+        <Col lg="9" className='BoardArea'>
+          <Board />
+        </Col>
+      </Row>
     </div>
   );
 }
 
-export default App;
+export default (App);
